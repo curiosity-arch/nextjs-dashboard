@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const csv = require('csvtojson');
 const path = require('path');
-const { oneHotEncode, standardize } = require('../utils/preprocess');
-const clusterData = require('../utils/clustering');
+const { oneHotEncode, standardize } = require('./preprocess');
+const clusterData = require('./clustering');
 
-const csvFilePath = path.join(__dirname, '../movies_and_image_movies.csv');
+const csvFilePath = path.join(__dirname, './movies_and_image_movies.csv');
 
 let moviesData = [];
 let clusters = [];
