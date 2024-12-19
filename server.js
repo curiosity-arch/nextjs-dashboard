@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 // Routes
-const movieRoutes = require('./routes/movies');
-const recommendRoutes = require('./routes/recommend');
+const movieRoutes = require('./movies');
+const recommendRoutes = require('./recommend');
 
 const app = express();
 app.use(bodyParser.json());
